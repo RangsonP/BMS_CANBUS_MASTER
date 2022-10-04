@@ -12,6 +12,7 @@
 #include "driver/gpio.h" // only use in board ESP32
 #include "driver/can.h" // only use in board ESP32
 
+
 void setup() {
   Serial.begin(115200);
   setup_can_driver();

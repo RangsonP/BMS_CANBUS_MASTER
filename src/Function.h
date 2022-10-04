@@ -46,7 +46,7 @@ void setup_can_driver(){
     .alerts_enabled = CAN_ALERT_ALL,
     .clkout_divider = 0
   };
-  can_timing_config_t t_config = CAN_TIMING_CONFIG_1MBITS(); // Set baud rate 250Kbps
+  can_timing_config_t t_config = CAN_TIMING_CONFIG_250KBITS(); // Set baud rate 250Kbps
   can_filter_config_t f_config = CAN_FILTER_CONFIG_ACCEPT_ALL();
 
   if (can_driver_install(&g_config, &t_config, &f_config) != ESP_OK) {
